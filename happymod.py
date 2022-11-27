@@ -19,6 +19,8 @@ BG="\033[100m"
 
 print(p+"[*]"+w+" prepeare for installing all dependencies")
 print(g+"[+]"+w+" colud take a while please wait")
+os.system("cd $HOME")
+
 Zipalign = os.system("command -v zipalign &> /dev/null")
 if Zipalign == 0:
 	print(g+"[✓]"+w+" zipalign is already exists")
